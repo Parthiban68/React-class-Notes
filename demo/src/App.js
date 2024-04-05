@@ -15,6 +15,7 @@ import External from './comp/External';
 import Table from './comp/Table';
 import Task3 from './comp/Task3';
 import State from './comp/State';
+import Calculator from './comp/Calculator';
 
 function App() {
   const [name,setName]= useState("on")
@@ -43,7 +44,8 @@ function App() {
     // <Jsx/>
     // <External admin = {false}/>
     // <Table/>
-    <Task3/>
+    // <Task3/>
+    <Calculator/>
     // </div>
     // <State/>
   );
