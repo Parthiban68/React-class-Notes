@@ -10,7 +10,11 @@ export default function Calculator() {
         }
         else if(value === "cl"){
             setInput("")
-        }else{
+        }
+            else if(value === "bs"){
+                setInput(input.toString().slice(0,-1))
+            }
+        else{
             setInput(input + value)
         }
     }
@@ -34,6 +38,8 @@ export default function Calculator() {
                 <input type="button" value="*" onClick={() =>handle("*")}/>
                 <input type="button" value="=" onClick={() =>handle("=")}/>
                 <input type="button" value="cl" onClick={()=>handle("cl")} />
+                <input type="button" className='abc' value="bs" onClick={()=>handle("bs")} />
+                
             </div>
         </div>
     )
