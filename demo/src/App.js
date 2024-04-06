@@ -17,6 +17,7 @@ import Task3 from './comp/Task3';
 import State from './comp/State';
 import Calculator from './comp/Calculator';
 import Task5 from './comp/Task5';
+import Task6 from './comp/Task6';
 
 function App() {
   const [name,setName]= useState("on")
@@ -49,7 +50,8 @@ function App() {
     // <Calculator/>
     // </div>
     // <State/>
-    <Task5/>
+    // <Task5/>
+    <Task6/>
   );
 }
 

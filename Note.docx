@@ -1,0 +1,46 @@
+Event Handling
+    it is used to excute a set of code based on specfic event such as button click, mouse hover etc..,
+
+Method props 
+    => it is used to pass a function hass aprops to its children
+    => it is used to pass value from child comp to parent comp
+
+State
+
+    =>It is similar to a variable which can store all types of data 
+    => The function comp will useState
+    => In class comp this,State.
+
+Difference between props and State
+
+                    props                                          State
+    => props will be pass from a parent comp        => State will be created within comp
+    => props are immutable(can't be changed)        => State are Mutable
+
+intili of State
+
+    => const [name,setName] = useState()
+    => We can't use var name = "adam" is jsx it throws an error
+
+useState
+
+    => It will be declare with two variable
+    => first one is used to display and intili the value
+    => And second one is used to change the values
+    => And Datatypes can be used in useState
+    => To render a value in the UI only useState can be used
+
+setCount
+
+    => setCount will be used in two ways 
+        1.Directly change the value
+        2.Change the value based pre-data
+    example
+        i.  setCount(1),setCount(count + 1)
+        ii. setCount(pre => prev+1)
+
+Conditional Rendering
+
+    =>Four Types of ConditionalRendering
+        1.  
+    
