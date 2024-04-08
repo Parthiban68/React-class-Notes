@@ -18,6 +18,12 @@ import State from './comp/State';
 import Calculator from './comp/Calculator';
 import Task5 from './comp/Task5';
 import Task6 from './comp/Task6';
+import Classnote1 from './comp/Classnote1';
+import Classnote2 from './comp/Classnote2';
+import Classnote3 from './comp/Classnote3';
+import Classnote4 from './comp/Classnote4';
+import Classnote5 from './comp/Classnote5';
+import Classnote6 from './comp/Classnote6';
 
 function App() {
   const [name,setName]= useState("on")
@@ -51,7 +57,13 @@ function App() {
     // </div>
     // <State/>
     // <Task5/>
-    <Task6/>
+    // <Task6/>
+    // <Classnote1/>
+    // <Classnote2/>
+    // <Classnote3/>
+    // <Classnote4/>
+    // <Classnote5/>
+    <Classnote6/>
   );
 }
 
