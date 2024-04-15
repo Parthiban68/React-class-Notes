@@ -1,0 +1,13 @@
+{
+    "Movie_list": [{
+        "id":"1",
+        "name":"parthiban",
+        "salary" : "1000"
+
+    },{
+        "id":"2",
+        "name":"parthiban",
+        "salary" : "1000"
+
+    }]
+}

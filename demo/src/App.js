@@ -24,46 +24,53 @@ import Classnote3 from './comp/Classnote3';
 import Classnote4 from './comp/Classnote4';
 import Classnote5 from './comp/Classnote5';
 import Classnote6 from './comp/Classnote6';
+import Database from './comp/Database';
+import Reducer from './comp/Reducer';
 
 function App() {
-  const [name,setName]= useState("on")
+  const [name, setName] = useState("on")
 
   return (
-    // <div className="App">
-    //   <h1>Wedding Invitation </h1>
-    // <hr align="center" width="90%" />
-    // <Basic/>
-    // <Hello name={" parthiban"} age = {23}>
-    //   <p>welcome to wedding</p>
-    // </Hello>
-    // <Hello name = {" Jeep kadathal jai krishna"} age = {45}/>
-    // <Hello name =  {" Prozone Mall Santhosh"} age= {35}/>
-    // <Hello name = {"chain snatching chandru"} age = {15}/>
-    // <br/>
-    // <Destructutre name = {"Silumisham Shiva"} age = {"Not interested in Marriage"}/>
-    // <Bye name={" Yours parthiban"}>
-    //   <h4>porathukulla Vaangada Peraandingalaa...!!</h4>
-    // </Bye>
-    // {/* <Count/> */}
-    // <Event/>
-    // {/* <Conditional/> */}
-    // <Task1/>
-    // <Task2 setName={setName} name={name}/>
-    // <Jsx/>
-    // <External admin = {false}/>
-    // <Table/>
-    // <Task3/>
-    // <Calculator/>
-    // </div>
-    // <State/>
-    // <Task5/>
-    // <Task6/>
-    // <Classnote1/>
-    // <Classnote2/>
-    // <Classnote3/>
-    // <Classnote4/>
-    // <Classnote5/>
-    <Classnote6/>
+    <>
+     {/* <div className="App">
+      <h1>Wedding Invitation </h1>
+    <hr align="center" width="90%" />
+    <Basic/>
+    <Hello name={" parthiban"} age = {23}>
+      <p>welcome to wedding</p>
+    </Hello>
+    <Hello name = {" Jeep kadathal jai krishna"} age = {45}/>
+    <Hello name =  {" Prozone item Santhosh"} age= {350}/>
+    <Hello name = {"chain snatching chandru"} age = {15}/>
+    <Hello name = {"Boomika"} age = {121}/>
+    <br/>
+    <Destructutre name = {"Silumisham Shiva"} age = {"Not interested in Marriage"}/>
+    <Bye name={" Yours parthiban"}>
+      <h4>porathukulla Vaangada Peraandingalaa...!!</h4>
+    </Bye>
+    <Count/>
+    <Event/>
+    <Conditional/>
+    <Task1/>
+    <Task2 setName={setName} name={name}/>
+    <Jsx/>
+    <External admin = {false}/>
+    <Table/>
+    <Task3/>
+    <Calculator/>
+    </div>
+    <State/>
+    <Task5/>
+    <Task6/>
+    <Classnote1/>
+    <Classnote2/>
+    <Classnote3/>
+    <Classnote4/>
+    <Classnote5/> */}
+  {/* <Database /> */}
+  <Reducer/>
+
+  </>
   );
 }
 
