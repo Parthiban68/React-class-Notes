@@ -9,7 +9,7 @@ import Event from './comp/Event';
 import Conditional from './comp/Conditional';
 import Task1 from './comp/Task1';
 import Task2 from './comp/Task2';
-import React, { useState } from 'react'
+import React, { useReducer, useState } from 'react'
 import Jsx from './comp/Jsx';
 import External from './comp/External';
 import Table from './comp/Table';
@@ -26,10 +26,23 @@ import Classnote5 from './comp/Classnote5';
 import Classnote6 from './comp/Classnote6';
 import Database from './comp/Database';
 import Reducer from './comp/Reducer';
+import Redobj from './comp/Redobj';
+import A from './comp/A';
+import B from './comp/B';
+import C from './comp/C';
+import CountDown from './comp/CountDown';
+export const counterContext = React.createContext();
 
 function App() {
   const [name, setName] = useState("on")
-
+  const initialstate = 0
+  const reducer = (state,action) =>{
+    switch (action){
+      case 'inc' : return state+1
+      default :return state
+    }
+  }
+  const [count,dispatch] = useReducer(reducer, initialstate)
   return (
     <>
      {/* <div className="App">
@@ -68,8 +81,17 @@ function App() {
     <Classnote4/>
     <Classnote5/> */}
   {/* <Database /> */}
-  <Reducer/>
+  {/* <Reducer/> */}
+  {/* <Redobj/> */}
 
+  {count}
+  <counterContext.Provider value={{count,dispatch}}>
+    <A/>
+    <B/>
+    <C/>
+  </counterContext.Provider>
+  <CountDown/>
+    
   </>
   );
 }

@@ -1,0 +1,13 @@
+.container{
+    width: 200px;
+    height: 20px;
+    border: 2px solid black;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.progress{
+    background-color: red;
+    height: 100%;
+    transition: width 1s linear;
+}
