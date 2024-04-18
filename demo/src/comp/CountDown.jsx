@@ -29,7 +29,7 @@ export default function CountDown() {
   const progresswidth = (seconds / duration) * 100;
   return (
     <>
-      {isTimercomplete ? (<h1>Spelling mistake queen Radhika & Groundfloor Kaushika</h1>) : 
+      {isTimercomplete ? (<h1>Spelling mistake queen Radhika &  Boomer Boomika</h1>) : 
       // (<p>count timer :{seconds}s</p>)
       (
         <div className='container'>

@@ -31,21 +31,30 @@ import A from './comp/A';
 import B from './comp/B';
 import C from './comp/C';
 import CountDown from './comp/CountDown';
+import Parent from './comp/Parent';
+import Usememo from './comp/Usememo';
+import Useref from './comp/UserefFunc';
+import UserefFunc from './comp/UserefFunc';
+import Click1 from './comp/Click1';
+import Click2 from './comp/Click2';
+import Counter1 from './comp/Counter1';
+import Counter2 from './comp/Counter2';
+
 export const counterContext = React.createContext();
 
 function App() {
   const [name, setName] = useState("on")
   const initialstate = 0
-  const reducer = (state,action) =>{
-    switch (action){
-      case 'inc' : return state+1
-      default :return state
+  const reducer = (state, action) => {
+    switch (action) {
+      case 'inc': return state + 1
+      default: return state
     }
   }
-  const [count,dispatch] = useReducer(reducer, initialstate)
+  const [count, dispatch] = useReducer(reducer, initialstate)
   return (
     <>
-     {/* <div className="App">
+      {/* <div className="App">
       <h1>Wedding Invitation </h1>
     <hr align="center" width="90%" />
     <Basic/>
@@ -80,19 +89,25 @@ function App() {
     <Classnote3/>
     <Classnote4/>
     <Classnote5/> */}
-  {/* <Database /> */}
-  {/* <Reducer/> */}
-  {/* <Redobj/> */}
+      {/* <Database /> */}
+      {/* <Reducer/> */}
+      {/* <Redobj/> */}
 
-  {count}
+      {/* {count}
   <counterContext.Provider value={{count,dispatch}}>
     <A/>
     <B/>
     <C/>
   </counterContext.Provider>
-  <CountDown/>
-    
-  </>
+  <CountDown/> */}
+      {/* <Parent/> */}
+      {/* <Usememo/> */}
+      {/* <UserefFunc /> */}
+      {/* <Click1/>
+      <Click2/> */}
+      {/* <Counter1/>
+      <Counter2/> */}
+    </>
   );
 }
 
